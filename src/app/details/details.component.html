@@ -1,0 +1,44 @@
+<div>
+  <mat-toolbar (click)="goBack()" class="nav-head"> <mat-icon>arrow_back_ios</mat-icon>
+    Movies Trailers</mat-toolbar>
+</div>
+
+
+<div id="detail-wrap">
+
+    <div id="mov-wrap" *ngIf="movieData" >
+
+        <div class="mov-img">
+            <img mat-card-image class="mov-img" src="https://image.tmdb.org/t/p/original/{{movieData.poster_path}}" >
+        </div>
+
+        <div class="mov-inner-wrap" >
+
+            <div class="mov-title">
+                <h4>{{movieData.original_title}}</h4>
+            </div>
+
+            <div class="mov-icons-wrap">
+        
+                <button mat-fab class="mov-icons" >
+                    <mat-icon>favorite</mat-icon>
+                </button>
+
+                <button mat-fab class="mov-icons" >
+                    <mat-icon>share</mat-icon>
+                </button>
+
+                <button mat-fab class="mov-icons" >
+                    <mat-icon>access_time</mat-icon>
+                </button>
+
+            </div>
+
+            <div class="mov-overview">
+                <h3>Overview</h3>
+                <p>{{movieData.overview}}</p>
+            </div>
+
+        </div>
+  </div>
+</div>

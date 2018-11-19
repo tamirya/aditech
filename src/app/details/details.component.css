@@ -1,0 +1,60 @@
+.nav-head{
+    background-color: #263238;
+    color: #fff;
+    cursor: pointer;
+} 
+
+div#mov-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    padding-top: 5px;
+}
+
+.mov-inner-wrap{
+    width: 40%;
+    margin-left: 60px;
+}
+
+.mov-title{
+    color:#fff;
+    font-size: 2em;
+}
+
+.fa-angle-left{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#detail-wrap{
+    height: 570px;
+    background-color:#37474F; 
+}
+
+img.mov-img.mat-card-image {
+    width: 270px;
+}
+
+.mov-img {
+    height: 450px;
+    margin-top: 24px;
+}
+
+.mov-overview {
+    color: #EEEEEE;
+    font-size: 1.5em;
+}
+
+.mov-overview p{
+    margin-top: 4px;
+    font-size: 0.8em;
+}
+.mov-overview h3{
+    margin-bottom: 0;
+}
+
+.mov-icons{
+    background-color: #4CAF50;
+    margin-left: 10px;
+}

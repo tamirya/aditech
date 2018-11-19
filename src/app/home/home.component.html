@@ -1,0 +1,20 @@
+<div>
+  <mat-toolbar class="nav-head">Movies Trailers</mat-toolbar>
+</div>
+<div id="wrap" >
+    <mat-form-field class="full-width">
+        <input matInput placeholder="Search Movie" [(ngModel)]="searchText" >
+    </mat-form-field>
+</div>
+
+<div id="mov-wrap">
+    <mat-card class="card" *ngFor="let mov of moviesData | filter : searchText "  (click)="getoDetail( mov )"   >
+        <img mat-card-image class="mov-img" src="https://image.tmdb.org/t/p/original/{{mov.poster_path}}" >
+        <mat-card-content>
+          <h2>{{mov.title}}</h2>
+          <p class="mov-overview" >
+          {{mov.overview}}
+          </p>
+        </mat-card-content>
+      </mat-card>
+</div>

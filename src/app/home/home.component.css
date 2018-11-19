@@ -1,0 +1,30 @@
+.full-width{
+  width: 100%;
+}
+
+#wrap{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card{
+  width: 26%;
+  margin: 12px;
+  cursor: pointer;
+}
+
+.mov-img{
+  height: 350px;
+}
+
+#mov-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-head{
+  background-color: #263238;
+  color: #fff;
+  cursor: pointer;
+} 
